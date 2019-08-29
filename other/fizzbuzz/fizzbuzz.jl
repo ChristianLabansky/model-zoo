@@ -9,7 +9,7 @@ function fizzbuzz(x::Int)
     is_divisible_by_three = x % 3 == 0
     is_divisible_by_five = x % 5 == 0
 
-    if is_divisible_by_three & is_divisible_by_five
+    if is_divisible_by_three && is_divisible_by_five
         return "fizzbuzz"
     elseif is_divisible_by_three
         return "fizz"
